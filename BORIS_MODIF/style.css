@@ -31,7 +31,7 @@ a:hover {
 nav {
     display: grid;
     grid-template-rows: 0;
-    padding: 22px 25px 0 15px;
+    padding: 22px 35px 0 25px;
     height: 40px;
 }
 
@@ -130,7 +130,7 @@ main form {
 .footer {
     font-size: 0.8rem;
     color: #505050;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 footer {
