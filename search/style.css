@@ -1,0 +1,235 @@
+/******************
+      GENERAL
+*******************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 272px;
+}
+
+a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.83rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/******************
+        NAV
+*******************/
+
+nav {
+    display: grid;
+    grid-template-rows: 0;
+    padding: 22px 25px 0 15px;
+    height: 40px;
+}
+
+.nav-container {
+    vertical-align: text-top;
+}
+
+.logo_small {
+    width: 74px;
+    height: 24px;
+}
+
+.links {
+    text-align: right;
+}
+
+/******************
+        MAIN
+*******************/
+
+main {
+    display: flex;
+    min-height: 250px;
+    height: 72vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 5px 0px;
+    position:relative;
+}
+
+.logo_complement {
+    position: absolute;
+    color: #4285f4;
+    font: 16px/16px Arial, sans-serif;
+    top: 81px;
+    left: 215px
+}
+
+main form {
+    text-align: center;
+    height: 114px;
+    width: 100%;
+}
+
+.text-area {
+    box-sizing: border-box;
+    height: 47px;
+    padding: 0px 30px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    max-width: 585px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.text-area:hover, .text-area:focus {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.submit-button {
+    margin-top: 30px;
+}
+
+.button {
+    margin: 0px 5px;
+    height: 37px;
+    width: 135px;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #3c4043;
+}
+
+.button:hover {
+    border: 1px solid lightgray;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+    border: 1px solid #139cfb;
+}
+
+/******************
+       FOOTER
+*******************/
+
+.footer {
+    font-size: 0.8rem;
+    color: #505050;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 275px;
+    font-size: 0.8rem;
+    color: #505050;
+}
+
+/******************
+  ADVANCED SEARCH
+*******************/
+
+.appbar {
+    display: block;
+    margin: 25px 45px;
+    color: #d93025;
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid #ebebeb;
+    /*suppression de ton width car il ne sert à rien et en plus empêche la responsivité
+    dès que tu vois une barre scroll horizontal, tu n'es plus en responsive*/
+}
+
+.form-container {
+    margin: 40px 2% 0 45px;
+}
+
+.form-title {
+    font-size: 16px;
+    color: #333;
+    min-width: 167px;   
+}
+
+.form-description {
+    display: inline-block;
+    width: 180px;
+    min-width: 180px;
+    height: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #222;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.form-input {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    padding: 1px 8px;
+}
+
+.form-input:focus {
+    border: 1px solid #139cfb;
+    outline: none;
+}
+
+.adv_inputs {
+    display: flex;
+    max-width: 750px;
+    height: 45px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.adv_button {
+    margin-left: auto;
+    height: 30px;
+    min-width: 120px;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.adv_button:hover {
+    background-color: #3079ed;
+    border: 1px solid #3364ff;
+}
+
+.adv_button:active {
+    box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 850px) {
+    .adv_inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 65px;
+        padding-right: 50px;
+    }
+}

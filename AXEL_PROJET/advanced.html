@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- Applying google police font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="nav-container">
+                <a href="index.html">
+                <img class="logo_small" src="images/google.png" alt="google_small">
+                </a>
+            </div>
+            <div class="links">
+                <a href="index.html">Google Search</a>
+            </div>
+        </div>
+        <div class="appbar">
+            <p>Advanced Search</p>
+        </div>
+        <hr>
+        <div class="form-container">
+            <form action="https://google.com/search">
+                <p class="form-title">Find pages with...</p>
+                <div class="adv_inputs">
+                    <label class="form-description" for="all_words">all these words: </label>
+                    <input type="text" id="all_words" class="form-input" name="as_q">
+                </div>
+                <div class="adv_inputs">
+                    <label class="form-description" for="exact">these exact words or phrases: </label>
+                    <input type="text" id="exact" class="form-input" name="as_epq">
+                </div>
+                <div class="adv_inputs">
+                    <label class="form-description" for="exact">any of these words: </label>
+                    <input type="text" id="exact" class="form-input" name="as_oq">
+                </div>
+                <div class="adv_inputs">
+                    <label class="form-description" for="exact">none of these words: </label>
+                    <input type="text" id="exact" class="form-input" name="as_eq">
+                </div>
+                <div class="adv_inputs">
+                    <button class="adv_button" type="submit">Advanced search</button>
+                </div>
+            </form>
+        </div>
+
+        <a href="../search/advanced.html">MODIF BORIS ADVANCED</a>
+    </body>
+</html>

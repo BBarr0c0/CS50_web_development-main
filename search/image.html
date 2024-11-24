@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- Applying google police font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="links">
+                <a href="index.html">Google Search</a>
+                <a href="advanced.html">Advanced Search</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="logo">
+                <img src="images/google.png" alt="Google_logo">
+                <span class="logo_complement">images</span>
+            </div>
+            <form action="https://google.com/search">
+                <div class="input">
+                    <input class="text-area" type="text" name="q">
+                </div>
+                <div class="submit-button">
+                    <!-- Adding hidden input for image search parameters -->
+                    <input type="hidden" name="client" value="img">
+                    <input type="hidden" name="udm" value="2">
+                    <input class="button" type="submit" value="Image Search">
+                </div>
+            </form>
+            <p class="footer">CS50W Googling Page</p>
+        </main>
+
+        <!-- footer a supprimer suivant ta maquette, 
+        juste pour te montrer que si il s'agit d'un footer, 
+        il est normalement situé en bas de ta structure (pas dans le main) -->
+        <footer>
+            <p>CS50W Googling Page</p>
+        </footer>
+
+        <a href="../AXEL_PROJET/image.html">PROJET AXEL IMAGE</a>
+
+    </body>
+</html>
