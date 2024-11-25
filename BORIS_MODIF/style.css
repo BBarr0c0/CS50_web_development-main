@@ -79,7 +79,7 @@ main {
 main form {
     text-align: center;
     height: 114px;
-    width: 100%;
+    width: 90%;
 }
 
 .text-area {
@@ -99,6 +99,8 @@ main form {
 }
 
 .submit-button {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
 
@@ -137,7 +139,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 275px;
+    margin-top: 25px;
+    height: 20vh;
     font-size: 0.8rem;
     color: #505050;
 }
@@ -225,6 +228,9 @@ hr {
 }
 
 @media (max-width: 850px) {
+    .text-area {
+        padding: 0 50px;
+    }
     .adv_inputs {
         display: flex;
         flex-direction: column;
